@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/drawable/rounded_border.xml" value="0.2203125" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/activity_android.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/activity_kotlin.xml" value="0.15" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/android_recyclerview.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/kotlin_recyclerview.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/My Pc/AndroidStudioProjects/StudyApp/app/src/main/res/layout/rounded_borders.xml" value="0.8273026315789473" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

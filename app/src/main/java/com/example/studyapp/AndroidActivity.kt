@@ -1,8 +1,11 @@
 package com.example.studyapp
 
 import android.content.DialogInterface
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.appcompat.app.ActionBar
 import androidx.recyclerview.widget.RecyclerView
 
 class AndroidActivity : AppCompatActivity() {
@@ -13,6 +16,8 @@ class AndroidActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         title = "Anroid Review"
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_android)
 
@@ -40,6 +45,11 @@ class AndroidActivity : AppCompatActivity() {
 
         adapterRV.setCardList(cardTopicsList)
 
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val intent = Intent(this, MainActivity ::class.java)
+        startActivity(intent)
+        return true
     }
 
     fun AlertDialog(position: Int) {

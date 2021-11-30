@@ -1,8 +1,12 @@
 package com.example.studyapp
 
+
 import android.content.DialogInterface
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 
@@ -15,6 +19,8 @@ class KotlinActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         title = "Kotlin Review"
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin)
 
@@ -41,6 +47,13 @@ class KotlinActivity : AppCompatActivity() {
          adapterRV.setCardList(cardTopicsList)
 
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val intent = Intent(this, MainActivity ::class.java)
+        startActivity(intent)
+        return true
+    }
+
 
     fun AlertDialog(position: Int) {
 
